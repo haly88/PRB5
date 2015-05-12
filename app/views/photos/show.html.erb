@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @photo.nombre %>
+</p>
+
+<h3>Commentario</h3>
+<%= render "comments/comments" %>
+<%= render "comments/form" %>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

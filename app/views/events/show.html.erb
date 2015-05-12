@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @event.nombre %>
+</p>
+
+<h3>Commentario</h3>
+<%= render "comments/comments" %>
+<%= render "comments/form" %>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

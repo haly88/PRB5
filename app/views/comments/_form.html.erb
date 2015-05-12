@@ -1,0 +1,4 @@
+<%= form_for [@commentable, @comment] do |f| %>
+	<%= f.text_area :content, rows: 4 %></br>
+	<%= f.submit %>
+<% end -%>
