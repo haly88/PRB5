@@ -1,8 +1,13 @@
 <%= form_for(@lote) do |f| %>
     <%= f.label :nombre %>
-    <%= f.text_field :nombre %>
-    <%= f.text_field :cordenadas %>
-  <a href="#" class="button" id="delete-button">Borrar</a>
+    <%= f.text_field :nombre %></br>
+    <%= f.label :cordenadas %>
+    <%= f.text_field :cordenadas %></br>
+    <%= f.label :area %>
+    <%= f.text_field :area %></br>
+    <%= f.label :localidad %>
+    <%= f.text_field :localidad %></br>
+
   <div id="map-canvas" class='columns small-12' style='height: 400px; width: 600px;'></div>
   <div class="actions">
     <%= f.submit %>

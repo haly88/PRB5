@@ -69,6 +69,6 @@ class LotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lote_params
-      params.require(:lote).permit(:nombre, :cordenadas)
+      params.require(:lote).permit(:nombre, :cordenadas, :area, :localidad)
     end
 end
